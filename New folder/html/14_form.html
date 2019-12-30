@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="main.html">
+        <fieldset>
+            <legend align="center">FORM</legend>
+            <table>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td>
+                        <input type="text" required placeholder="enter name" name="username" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" required name="pass" /></td>
+                </tr>
+                <tr>
+                    <td><label>List of Browsers</label></td>
+                    <td>
+                        <input type="text" list="browsers" required name="list" />
+                        <datalist id="browsers">
+                            <option value="Chrome"> </option>
+                            <option value="Firefox"> </option>
+                            <option value="Internet Explorer"></option>
+                        </datalist>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>1<input type="checkbox" /></td>
+    
+                    <td>2<input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>M<input type="radio" name="gen" /></td>
+                    <td>F<input type="radio" name="gen" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" /></td>
+                    <td><input type="reset" /></td>
+                </tr>
+            </table>
+    
+    </form>
+    </fieldset>
+</body>
+</html>
