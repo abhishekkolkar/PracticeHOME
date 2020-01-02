@@ -8,14 +8,13 @@
     <style>
       div {
         border: brown;
-        border-style: solid;
+        border-style: hidden;
         size: 1px;
-        height: 1366px;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
       body {
-        background-image: url(../img/img.jpeg);
-        background-size: 100%;
-        background-attachment: fixed;
       }
       .white {
         background-color: white;
@@ -23,13 +22,41 @@
       .hf {
         height: 100px;
       }
+      .one {
+        background-image: url(../img/ip1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 1880px;
+        height: 800px;
+      }
+      .two {
+        background-image: url(../img/ip2.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        width: 1880px;
+        height: 768px;
+      }
+      .three {
+        background-image: url(../img/ip3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+        width: 1880px;
+        height: 768px;
+      }
+      .four {
+        background-image: url(../img/ip4-5.JPG);
+        background-position: center;
+
+        width: 1880px;
+        height: 768px;
+      }
     </style>
   </head>
   <body>
-    <div class="hf">abc</div>
-    <div class="white">abc</div>
-    <div>abc</div>
-    <div>abc</div>
-    <div class="white hf">abc</div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
   </body>
 </html>
