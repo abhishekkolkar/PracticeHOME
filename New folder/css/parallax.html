@@ -14,13 +14,11 @@
       div {
         border: brown;
         border-style: hidden;
-        size: 1px;
 
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-      body {
-      }
+
       .white {
         background-color: white;
       }
@@ -31,7 +29,7 @@
         background-image: url(../img/ip1.jpg);
         background-position: center;
         background-size: cover;
-        width: 1880px;
+        /* width: 1880px; */
         height: 800px;
       }
       .two {
@@ -39,7 +37,7 @@
         background-position: center;
         background-attachment: fixed;
 
-        width: 1880px;
+        /* width: 1880px; */
         height: 768px;
       }
       .three {
@@ -47,23 +45,22 @@
         background-position: center;
         background-size: cover;
         background-attachment: scroll;
-        width: 1880px;
+        /* width: 1880px; */
         height: 768px;
       }
       .four {
-        background-image: url(../img/ip4-5.JPG);
+        background-image: url(../img/ip4-5.jpg);
         background-position: center;
 
-        width: 1880px;
+        /* width: 1880px; */
         height: 768px;
       }
       ul {
-        padding-left: 500px;
-
+        padding-left: 50px;
         list-style-type: none;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        /* background-color: #333; */
+        background-color: #333;
         background-color: black;
         height: 80px;
       }
@@ -89,6 +86,31 @@
         padding-top: 40px;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .animdiv {
+        height: "700px";
+        animation: abc infinite 5s;
+      }
+      @keyframes abc {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: black;
+        }
+      }
+      .animdiv2 {
+        width: 0px;
+        background-color: orangered;
+        animation: animdiv2 10s infinite;
+      }
+      @keyframes animdiv2 {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -126,13 +148,17 @@
         allowfullscreen=""
       ></iframe>
     </div>
+    <div class="animdiv2">
+      .
+    </div>
+    <div class="animdiv">
+      .
+    </div>
     <div class="footer">
       Copyright © 2020 Apple Inc. All rights reserved<br /><br />
       <center>
-      <a href="https://www.instagram.com/abhishekkolkar/"</a> <i style="font-size: 50px;" class="fa fa-instagram">
-        
-      </i>
-        
+        <a href="https://www.instagram.com/abhishekkolkar/"> </a>
+        <i style="font-size: 50px;" class="fa fa-instagram"> </i>
       </center>
     </div>
   </body>
