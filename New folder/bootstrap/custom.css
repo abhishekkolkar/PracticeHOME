@@ -1,0 +1,8 @@
+.table {
+  border: 1px solid red;
+}
+
+.table td,
+.table th {
+  background-color: gray;
+}
