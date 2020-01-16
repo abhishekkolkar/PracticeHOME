@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script>
+      document.write("name is:" + name);
+      console.log("list:" + nameArray);
+      console.table(nameArray);
+      console.groupCollapsed("Im in group now");
+      console.log(nameArray[0]);
+      console.log(nameArray[1]);
+      console.log(nameArray[2]);
+      console.groupEnd();
+      console.log("%c CSS APPLIED ", "color:red");
+      console.groupCollapsed("Array of Objects:");
+      console.log(arrayOfObjects[0]);
+      console.log(arrayOfObjects[1]);
+      console.log(arrayOfObjects);
+      console.groupEnd();
+
+      //   console.clear();
+
+      //confirm
+
+      var num1 = confirm("Do you want to exit");
+      document.write("<br>" + num1);
+      if (true) {
+        document.write("<br>Closed");
+      } else {
+        document.write("<br>Still Open!");
+      }
+
+      //prompt
+      var promptNum1 = prompt("Enter 1st number");
+      var promptNum2 = prompt("Enter 2nd number");
+      document.write("Ans" + (+promptNum1 + +promptNum2));
+    </script>
+  </body>
+</html>
