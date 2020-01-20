@@ -13,18 +13,21 @@
       id="img1"
       width="200px"
       onclick="changeImg(this)"
+      onmouseover="msover(this)"
     />
     <img
       src="../img/ip2.jpg"
       id="img2"
       width="200px"
       onclick="changeImg(this)"
+      onmouseover="msover(this)"
     />
     <img
       src="../img/ip3.jpg"
       id="img3"
       width="200px"
       onclick="changeImg(this)"
+      onmouseover="msover(this)"
     />
 
     <script>
@@ -33,6 +36,11 @@
         document.getElementById("mainImg").src = img.src;
         document.getElementById("mainImg").src = img.src;
         document.getElementById("mainImg").src = img.src;
+      }
+      function msover(img) {
+        document.getElementById("img1").style.boxShadow = "0px 0px 5px red";
+        document.getElementById("img2").style.boxShadow = "0px 0px 5px red";
+        document.getElementById("img3").style.boxShadow = "0px 0px 5px red";
       }
     </script>
     <!-- onclick="document.getElementById('mainImg').src=this.src" -->
