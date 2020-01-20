@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../img/ip1.jpg" id="mainImg" width="600px" /><br />
+    <img
+      src="../img/ip1.jpg"
+      id="img1"
+      width="200px"
+      onclick="changeImg(this)"
+    />
+    <img
+      src="../img/ip2.jpg"
+      id="img2"
+      width="200px"
+      onclick="changeImg(this)"
+    />
+    <img
+      src="../img/ip3.jpg"
+      id="img3"
+      width="200px"
+      onclick="changeImg(this)"
+    />
+
+    <script>
+      function changeImg(img) {
+        // document.getElementById("mainImg").src = this.src;
+        document.getElementById("mainImg").src = img.src;
+        document.getElementById("mainImg").src = img.src;
+        document.getElementById("mainImg").src = img.src;
+      }
+    </script>
+    <!-- onclick="document.getElementById('mainImg').src=this.src" -->
+  </body>
+</html>
