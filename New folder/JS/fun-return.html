@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function cal() {
+        var num1 = 10;
+        var num2 = 20;
+        var sum;
+        sum = num1 + num2;
+        document.write("<h1>Ans is:" + sum);
+      }
+      cal();
+
+      function cal2(num1, num2) {
+        var num1;
+        var num2;
+        var sum;
+        sum = num1 + num2;
+        document.write("<br><h1>Ans 2 is:" + sum);
+      }
+      cal2(20, 20);
+
+      function calret(num1, num2) {
+        sum = num1 + num2;
+        return sum;
+      }
+      //   function calcRes(sub1, sub2) {
+      //         var tot;
+
+      //         tot = sub1 + sub2;
+      //         return tot;
+      //     }
+      document.write("<br> ans 3: " + calret(50, 50));
+
+      var annofun = function(num1, num2) {
+        sum = num1 + num2;
+        return sum;
+      };
+      document.write("<br>Ans 4:" + annofun(90, 550));
+    </script>
+  </body>
+</html>
