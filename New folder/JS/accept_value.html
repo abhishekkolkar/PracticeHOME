@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Abhishek</h1><hr>
+    <input type="text" id="txtbox">
+    <input type="button" value="Change Font Size" id="btn1" onclick="fontSize()"> </input>
+    <br>
+    <br>
+    <input type="color" id="colVal">
+    <input type="button" value="Change Font Color" id="btn2" onclick="fontColor()"> </input>
+    <br>
+    <br>
+    <input type="button" value="Reset" onclick="reset()">
+
+
+
+    <script>
+    function fontSize()
+    {
+ var num =document.getElementById("txtbox").value;
+document.getElementById("head").style.fontSize= num+"px";
+
+    }
+    function fontColor()
+    {
+        var col = document.getElementById("colVal").value;
+        console.log("TCL: col", col)
+        
+        document.getElementById("head").style.color = col;
+    }
+    function reset()
+    {
+       var def= "2em";
+       var defCol="black"
+       document.getElementById("head").style.fontSize= def;
+              document.getElementById("head").style.color = defCol;
+
+    }
+
+    </script>
+</body>
+</html>
